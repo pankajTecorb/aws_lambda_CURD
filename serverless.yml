@@ -7,7 +7,7 @@ provider:
     shouldStartNameWithService: true
   lambdaHashingVersion: 20201221
   environment:
-    Mongo_Db : mongodb+srv://tecorb:kumartec123@tecorb.juv3dbp.mongodb.net/serverlessTS
+    Mongo_Db : mongodb+srv://userName:password@tecorb.juv3dbp.mongodb.net/serverlessTS
     Port: 3000
 
 plugins:
