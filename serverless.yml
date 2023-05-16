@@ -1,0 +1,29 @@
+service: serverless-typescript-express
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  apiGateway:
+    shouldStartNameWithService: true
+  lambdaHashingVersion: 20201221
+  environment:
+    Mongo_Db : mongodb+srv://tecorb:kumartec123@tecorb.juv3dbp.mongodb.net/serverlessTS
+    Port: 3000
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+  - serverless-openwhisk
+functions:
+  api:
+    handler: src/index.handler
+    events:
+      - http:
+          path: /{proxy+}
+          method: any
+  cron:
+    handler: src/cron.cronJob
+    events:
+      - schedule: cron(* * * * * *) 
+
+        
