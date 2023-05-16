@@ -39,8 +39,48 @@ npm run remove
 
 
 ### API Routes
-- Add user  => Post type (http://localhost:3000/dev/api/v1/add)  ,   body {name ,phoneNumber,email,address}
-- Detail of user  => Get type  (http://localhost:3000/dev/api/v1/detail/:id)  ,   param (id)
-- Edit user  => Put type  (http://localhost:3000/dev/api/v1//:id/edit)  ,   body {name ,phoneNumber,email,address}
-- Status change of  user  => Put type (http://localhost:3000/dev/api/status/:id)   ,  body {isActive} ,param (id)
-- Delete user  =>  Delete type (http://localhost:3000/dev/api/v1/delete/:id)  ,  param (id)
+### Add User  => Post Type  (http://localhost:3000/dev/api/v1/add) 
+- Request Body   
+```
+   {       
+           "name":"userName", 
+           "phoneNumber":"userPhone",
+           "email":"userEmail",
+           "address":"userAddress"
+           
+    }
+``` 
+### User Detail  =>  Get Type  (http://localhost:3000/dev/api/v1/detail/:id)
+- Request Body   
+```
+  Param (id)
+  
+``` 
+
+### Edit User  => Put Type  (http://localhost:3000/dev/api/v1//:id/edit) 
+- Request Body   
+```
+   {       
+           "name":"userName", 
+           "phoneNumber":"userPhone",
+           "email":"userEmail",
+           "address":"userAddress"
+           
+    }
+``` 
+### User Status Change   => Put Type  (http://localhost:3000/dev/api/status/:id) 
+- Request Body   
+```
+   {       
+           "isActive":true/false 
+          
+    }
+   Param (id) 
+``` 
+### Delete User  =>  Delete Type (http://localhost:3000/dev/api/v1/delete/:id)
+- Request Body   
+```
+  Param (id)
+  
+```
+
