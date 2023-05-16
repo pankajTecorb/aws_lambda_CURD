@@ -40,7 +40,7 @@ npm run remove
 
 ### API Routes
 - Add user  => Post type (http://localhost:3000/dev/api/v1/add)  ,   body {name ,phoneNumber,email,address}
-- Detail of user  => Get type  (http://localhost:3000/dev/api/v1/detail/:id)  ,   body {name ,phoneNumber,email,address}
+- Detail of user  => Get type  (http://localhost:3000/dev/api/v1/detail/:id)  ,   param (id)
 - Edit user  => Put type  (http://localhost:3000/dev/api/v1//:id/edit)  ,   body {name ,phoneNumber,email,address}
-- Status change of  user  => Put type (http://localhost:3000/dev/api/status/:id)   ,  body {name ,phoneNumber,email,address}
-- Delete user  =>  Delete type (http://localhost:3000/dev/api/v1/delete/:id)  ,  body {name ,phoneNumber,email,address}
+- Status change of  user  => Put type (http://localhost:3000/dev/api/status/:id)   ,  body {isActive} ,param (id)
+- Delete user  =>  Delete type (http://localhost:3000/dev/api/v1/delete/:id)  ,  param (id)
