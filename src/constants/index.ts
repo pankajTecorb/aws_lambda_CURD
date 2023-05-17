@@ -7,7 +7,7 @@ export const errors = {
         "Exists": "Already Exists! Please try again",
         "userExist": "User already Exist",
         "somethingwrong": "Something went wrong",
-        "userNameTaken": "User id is already in use, try another.",
+        
     }
 }
 

@@ -2,8 +2,7 @@ import userModel from '../models/user';
 import { CustomError } from '../utils/errors';
 import StatusCodes from 'http-status-codes';
 import { errors } from '../constants';
-import moment from 'moment-timezone';
-import mongoose from 'mongoose';
+
 
 /**
  *  Register User

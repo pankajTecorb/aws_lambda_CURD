@@ -25,7 +25,7 @@ app.use(express_1.default.urlencoded({ extended: true }));
 app.use('/api/v1', user_1.default);
 app.get("/hello", (req, res, next) => {
     return res.status(200).json({
-        message: "Hello, World!", url: process.env.Mongo_Db, port: process.env.Port
+        message: "Hello, World!"
     });
 });
 app.get("/error", (req, res, next) => {
